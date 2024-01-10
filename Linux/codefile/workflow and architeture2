@@ -1,0 +1,37 @@
+Workflow and Functionality:
+General Information Retrieval:
+
+The utility seems to provide information about the system.
+The help option provides assistance or information about using the utility.
+The cpu getinfo option retrieves CPU-related information.
+User Management:
+
+The create USERNAME option creates a new user with the specified username.
+File Information Retrieval:
+
+Several options are provided to retrieve information about files:
+--last-modified: Gets the last modification time of a file.
+--owner: Gets the owner of a file.
+--permissions: Gets the permissions of a file.
+--size: Gets the size of a file.
+User Privileges:
+
+The --sudo-only option retrieves users with sudo privileges.
+Application Architecture:
+The internsctl utility is likely implemented using a shell script (test.sh). Here's a basic breakdown of how the application might be structured:
+
+Command-Line Argument Parsing:
+
+The script (test.sh) would start by parsing command-line arguments to determine the user's intention.
+Option Handling:
+
+Different code blocks or functions would be invoked based on the specified options.
+For example, if the user provides help, the utility would display information about how to use it.
+If the user provides cpu getinfo, it would retrieve and display CPU information.
+For file-related options, it might use system commands or custom logic to fetch the required information.
+User Management:
+
+If the create option is provided, the script would create a new user with the specified username.
+Output Formatting:
+
+The script would format the retrieved information and print it to the console.

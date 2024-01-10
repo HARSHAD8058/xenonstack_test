@@ -1,0 +1,26 @@
+Workflow and Application Architecture:
+The provided Bash script appears to be a command-line utility that performs various system-related tasks. Here's a breakdown of the workflow and application architecture:
+
+Command-Line Argument Parsing:
+
+The script starts by checking if the number of command-line arguments is at least 1. If not, it prints an error message and exits.
+If the argument count is valid, it proceeds to check the specific commands or options.
+Version and Help Options:
+
+If the command is --version, it prints the version information.
+If the command is --help, it prints a set of available commands and their descriptions.
+Basic Commands:
+
+The script handles basic commands related to CPU and memory information.
+For the cpu command, it uses the lscpu command to retrieve CPU information.
+For the memory command, it uses the free command to retrieve memory information.
+Intermediate Commands - User Management:
+
+The script checks for the user command and handles user-related operations.
+For user creation (create), it uses the useradd command.
+For listing users, it uses the /etc/passwd file and optionally filters for users with sudo permissions.
+Advanced Commands - File Operations:
+
+The script checks for the file command and handles file-related operations.
+It checks for options like --permissions, --size, --owner, and --last-modified (or their short forms -p, -s, -o, -m).
+It uses various commands (ls, stat, etc.) to retrieve and display file information based on the provided options.

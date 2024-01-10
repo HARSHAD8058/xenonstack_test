@@ -1,0 +1,27 @@
+.formm{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height:100vh;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 10px;
+background-color: rgb(140, 90, 202);
+font-family: sans-serif;
+font-weight: bold;
+font-size: large;
+}
+.Name,.Email,.Message,.txt_ara{
+    width: 60%;
+    height: 2rem;
+    border: none;
+    border-radius: 5px;
+  
+
+}
+.sbt{
+    padding: 1rem 2rem ;
+    border: none;
+    border-radius: 5px;
+}
